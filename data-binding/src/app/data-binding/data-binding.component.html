@@ -111,6 +111,9 @@
     <h3>Two-way data binding</h3>
     <div>
       <input type="text" [ngModel]="nome" (ngModelChange)="nome = $event" />
+
+      <input type="text" [(ngModel)]="nome" />
+
       <p>Você digitou: {{ nome }}</p>
     </div>
   </article>
