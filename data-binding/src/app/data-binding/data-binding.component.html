@@ -20,7 +20,7 @@
     <div>
       Selecione uma classe:
       <select #classe (change)="(0)">
-        <option value="alert-sucess">Sucesso</option>
+        <option value="alert-success">Sucesso</option>
         <option value="alert-info">Info</option>
         <option value="alert-warning">Alerta</option>
         <option value="alert-danger">Erro</option>
@@ -34,7 +34,7 @@
       <div
         class="alert"
         role="alert"
-        [class.alert-sucess]="classe.value == 'alert-sucess'"
+        [class.alert-success]="classe.value == 'alert-success'"
       >
         Sucesso
       </div>
