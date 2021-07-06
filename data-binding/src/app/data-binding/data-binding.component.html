@@ -118,5 +118,13 @@
 
       <p>Você digitou: {{ nome }}</p>
     </div>
+    <div>
+      <input type="text" [(ngModel)]="pessoa.nome" />
+      <input type="text" [(ngModel)]="pessoa.idade" />
+
+      <p>
+        Meu nome é {{ pessoa.nome }} e tenho {{ pessoa.idade }} anos de idade.
+      </p>
+    </div>
   </article>
 </section>
