@@ -12,6 +12,7 @@ export class DataBindingComponent implements OnInit {
   urlImage = 'https://www.johndpotts.com/static/f4efd0b5a6e6474b9241df79a65bcca1/77eb6/data-binding-chart.jpg'
 
   valorAtual: string = '';
+  valorSalvo: string = '';
 
   getValor() {
     return 1;
@@ -27,6 +28,10 @@ export class DataBindingComponent implements OnInit {
 
   onKeyUp(evento: KeyboardEvent) {
     this.valorAtual = (<HTMLInputElement>evento.target).value;
+  }
+
+  salvarValor(valor: string) {
+    this.valorSalvo = valor;
   }
 
   constructor() { }
