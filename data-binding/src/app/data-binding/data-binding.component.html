@@ -105,3 +105,18 @@
     </div>
   </article>
 </section>
+
+<section class="two-way-binding">
+  <article>
+    <h3>Two-way data binding</h3>
+    <div>
+      <input
+        type="text"
+        [value]="nome"
+        (input)="nome = campoInput.value"
+        #campoInput
+      />
+      <p>Você digitou: {{ nome }}</p>
+    </div>
+  </article>
+</section>
