@@ -11,12 +11,22 @@ export class DataBindingComponent implements OnInit {
   cursoAngular: boolean = true;
   urlImage = 'https://www.johndpotts.com/static/f4efd0b5a6e6474b9241df79a65bcca1/77eb6/data-binding-chart.jpg'
 
+  valorAtual: string = '';
+
   getValor() {
     return 1;
   }
 
   getCurtirCurso() {
     return true;
+  }
+
+  botaoClicado() {
+    alert('Botão clicado!');
+  }
+
+  onKeyUp(evento: KeyboardEvent) {
+    this.valorAtual = (<HTMLInputElement>evento.target).value;
   }
 
   constructor() { }
