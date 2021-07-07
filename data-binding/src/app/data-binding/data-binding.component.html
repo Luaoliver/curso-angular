@@ -115,7 +115,7 @@
 
     <contador
       [valor]="valorInicial"
-      mudouValor="onMudouValor($event)"
+      (mudouValor)="onMudouValor($event)"
     ></contador>
   </article>
 </section>
